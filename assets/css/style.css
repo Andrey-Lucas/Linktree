@@ -1,0 +1,146 @@
+:root {
+    --bg-principal: #FDFFE6;
+    --bg-botoes: #FDDCE0;
+    --bg-botoes-hover: #F0AFBF;
+    --bg-borda: #FDDCE0;
+    --bg-borda2: #FF7679;
+    --color-font1: #FF738F;
+    --color-font2: #FDFFE6;
+}
+
+.tema-dark-purple{
+    --bg-principal:#FDFFE6;
+    --bg-botoes: #FDDCE0;
+    --bg-botoes-hover: #F0AFBF;
+    --bg-borda: #FDDCE0;
+    --bg-borda2: #FF7679;
+    --color-font1: #FF738F;
+    --color-font2: #FDFFE6;
+}
+
+.tema-light-purple{
+    --bg-principal: #eeddfd;
+    --color-font1: #252427;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-principal);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-font1);
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+
+img {
+    width: 100%;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    background: var(--bg-borda) solid 4px;
+    background: linear-gradient(90deg, var(--bg-botoes-hover) 0%, var(--color-font2) 55%, var(--bg-botoes) 100%);
+}
+
+.avatar :hover{
+    background: var(--bg-borda) solid 4px;
+    background: linear-gradient(90deg, var(--bg-botoes) 0%, var(--bg-borda2) 55%, var(--bg-botoes-hover) 100%);
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--color-font1);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.username {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-font1);
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    margin: 48px 0;
+}
+
+ul li a {
+    height: 53px;
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(90deg, var(--bg-botoes-hover) 0%, var(--bg-botoes) 100%);
+    border-radius: 6px;
+
+    font-size: 14px;
+    color: var(--color-font2);
+    text-transform: uppercase;
+
+    transition: background 400ms;
+}
+
+ul li a:hover {
+    background: linear-gradient(-90deg, var(--bg-borda2) 50%, var(--bg-botoes-hover) 100%);
+}
+
+.voltar {
+    background: none;
+}
+
+.voltar:hover {
+    background: none;
+    color: var(--bg-botoes-hover);
+}
+
+.voltar svg {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+footer a {
+    color: var(--color-font1);
+}
+
+footer a:hover {
+    color: var(--bg-borda2);
+}
